@@ -1,6 +1,6 @@
 import { getCustomRepository } from 'typeorm';
 import Task from "../models/Task";
-import AppError from '../middlewares/AppError';
+import TaskRepository from '../repositorys/taskRepository';
 
 interface IRequest{
     title: string;
