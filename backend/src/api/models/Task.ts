@@ -1,17 +1,21 @@
 import {
     Column,
+    PrimaryGeneratedColumn,
     Entity,
 } from 'typeorm';
 
-@Entity("task")
+@Entity('task')
 class Task{
+    @PrimaryGeneratedColumn('increment')
+    id: number;
+
     @Column()
     title: string;
 
-    @Column
+    @Column()
     description: string;
 
-    @Column
+    @Column()
     date: Date;
 }
 
