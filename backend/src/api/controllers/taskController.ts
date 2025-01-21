@@ -6,7 +6,6 @@ export default class taskController{
         const {title, description, date} = request.body;
 
         const taskService = new TaskService();
-
         const task = await taskService.create({title, description, date});
         
         return response.status(201).json(task);

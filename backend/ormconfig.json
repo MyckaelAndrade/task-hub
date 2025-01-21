@@ -5,11 +5,11 @@
     "username": "sqlite",
     "password": "projeto",
     "database": "projeto",
-    "entities": ["./src/api/models/.ts"],
+    "entities": ["./src/api/models/*.ts"],
     "migrations": [
-      "./src/database/migrations/.ts"
+      "./src/database/migrations/*.ts"
     ],
     "cli": {
-      "migrationsDir": "./src/database/migrations"
-    }
+    "migrationsDir": "./src/database/migrations"
+  }
   }
