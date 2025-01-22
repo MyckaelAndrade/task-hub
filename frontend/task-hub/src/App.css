@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Macondo&display=swap'); */
 
 /* * {
@@ -73,3 +74,10 @@
   background-color: #cdcdcd;
   color: #000;
 } */
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+>>>>>>> Stashed changes
