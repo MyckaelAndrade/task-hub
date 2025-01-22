@@ -4,6 +4,7 @@ import 'express-async-errors';
 import routes from './src/routes/index';
 import './src/database/connection.ts';
 import bodyParser from 'body-parser';
+import { errors } from 'celebrate';
 import AppError from './src/api/middlewares/AppError';
 import cors from 'cors';
 
@@ -23,6 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(routes);
 
+app.use(errors());
 
 app.use(
   (error: Error, request: Request, response: Response, next: NextFunction) => {
@@ -44,5 +46,5 @@ app.use(
 
 const PORT = 3001;
 app.listen(PORT, () => {
-  console.log(Server is running on http://localhost:${PORT});
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
