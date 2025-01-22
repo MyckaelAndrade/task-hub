@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="container">
+        <div className="box">
+          <h1>Task Hub</h1>
+          <div className="input task">
+            <h2>Título da tarefa</h2>
+            <input type="text" placeholder="Escreva aqui o título da tarefa" />
+          </div>
+          <div className="input desc">
+            <h2>Descrição da tarefa</h2>
+            <textarea cols="30" rows="5" placeholder="Escreva aqui a descrição da tarefa"></textarea>
+          </div>
+          <div className="input date">
+            <h2>Data de vencimento</h2>
+            <input type="date" placeholder="Escreva sua tarefa" />
+          </div>
+          <button>Add</button>
+        </div>
+      </div>
     </div>
   );
 }
